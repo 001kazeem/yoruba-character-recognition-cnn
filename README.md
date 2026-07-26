@@ -64,3 +64,14 @@ Visualization:
 
 Development Environment:
 - Jupyter Notebook
+
+## Model Performance
+The trained CNN model achieved the following results:
+
+* Metric | Value 
+* Training Accuracy | 89.17% 
+* Validation Accuracy | 88.08% 
+* Training Loss | 0.3115 
+* Validation Loss | 0.4216 
+
+The results demonstrate that deep learning approaches can effectively recognize Yoruba characters and provide a foundation for future language technology applications.
