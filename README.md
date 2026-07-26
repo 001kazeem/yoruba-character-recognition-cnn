@@ -43,3 +43,24 @@ The project followed a machine learning pipeline consisting of:
 
 The model was trained using Convolutional Neural Network techniques because CNNs are effective for extracting visual features from image-based data.
 
+## Technologies Used
+
+Programming Language:
+- Python
+
+Machine Learning Frameworks:
+- TensorFlow
+- Keras
+
+Computer Vision:
+- OpenCV
+
+Data Processing:
+- NumPy
+- Pandas
+
+Visualization:
+- Matplotlib
+
+Development Environment:
+- Jupyter Notebook
