@@ -75,3 +75,25 @@ The trained CNN model achieved the following results:
 * Validation Loss | 0.4216 
 
 The results demonstrate that deep learning approaches can effectively recognize Yoruba characters and provide a foundation for future language technology applications.
+
+
+## Future Work
+
+Future improvements include:
+- Extending character recognition to Yoruba words and sentences.
+- Applying Natural Language Processing techniques.
+- Exploring transformer-based models and Large Language Models.
+- Developing AI solutions for low-resource African languages.
+- Improving model explainability using Explainable AI methods.
+
+
+## Author
+Kazeem Umar Faruk
+Computer Science Graduate | AI Research Enthusiast
+
+Research interests:
+- Natural Language Processing
+- Large Language Models
+- Deep Learning
+- Trustworthy AI
+- Low-resource Language Technology
