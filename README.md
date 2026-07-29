@@ -1,3 +1,66 @@
+# Yoruba Character Recognition Using Deep Learning
+
+## Overview
+
+This project presents a Deep Learning-based approach for recognizing Yoruba characters using Convolutional Neural Networks (CNNs).
+The research explores the application of Artificial Intelligence techniques to low-resource language technology by developing a system capable of classifying Yoruba character images accurately.
+Yoruba is one of the widely spoken African languages, yet digital language resources remain limited compared to high-resource languages. This project demonstrates how Machine Learning can contribute to language preservation, accessibility, and intelligent language systems.
+
+## Research Objective
+
+The main objective of this project is to develop an automated system capable of recognizing Yoruba characters from image data using deep learning techniques.
+
+The project aims to:
+- Develop a CNN-based character recognition model.
+- Build a complete machine learning pipeline from data preparation to evaluation.
+- Investigate AI applications for low-resource language technologies.
+- Provide a foundation for future research in NLP and language models.
+
+## Dataset
+
+The dataset used in this research contains approximately 5,000 labelled Yoruba character images.
+
+Dataset details:
+- Dataset size: 5,000 images
+- Data type: Image-based character samples
+- Task: Multi-class classification
+
+Preprocessing steps included:
+- Image resizing
+- Pixel normalization
+- Data augmentation
+- Training and validation splitting
+
+## Model Performance
+
+The CNN model achieved the following results:
+* Metric | Value 
+* Training Accuracy | 89.17% 
+* Validation Accuracy | 88.08% 
+* Training Loss | 0.3115 
+* Validation Loss | 0.4216
+
+The results demonstrate that deep learning methods can effectively recognize Yoruba characters and provide a foundation for future language technology research.
+
+
+## Research Relevance
+
+This project aligns with research areas including:
+- Deep Learning
+- Machine Learning
+- Low-resource Language Technology
+- Natural Language Processing (NLP)
+- Trustworthy Artificial Intelligence
+
+Future extensions of this work include exploring transformer-based models, Large Language Models (LLMs), and multimodal AI systems for African languages.
+
+
+
+
+
+
+
+
 # yoruba-character-recognition-cnn
 A CNN-based recognition system for Yoruba characters with about 5,000 labelled images. The model achieved 89.17% training accuracy and 88.08% validation accuracy, demonstrating the potential of deep learning for low-resource language technology.
 
