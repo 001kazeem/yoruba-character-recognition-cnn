@@ -64,6 +64,47 @@ Visualization:
 Development Environment:
 - Jupyter Notebook
 
+## Model Architecture
+
+The Yoruba Character Recognition system was developed using a Convolutional Neural Network (CNN) implemented with TensorFlow and Keras. The model follows a sequential architecture consisting of feature extraction layers and classification layers.
+
+### CNN Architecture Overview
+
+| Component | Description |
+|---|---|
+| Model Type | Sequential Convolutional Neural Network |
+| Input | Preprocessed Yoruba character images |
+| Convolution Layers | Multiple Conv2D layers with 32 and 64 filters |
+| Activation Function | ReLU |
+| Pooling | MaxPooling2D layers |
+| Regularization | Dropout layers |
+| Flatten Layer | Converts feature maps into vectors |
+| Fully Connected Layer | Dense layer with 512 neurons |
+| Output Layer | Dense layer with 50 neurons for classification |
+
+### Detailed Layer Configuration
+
+| Layer | Output Shape |
+|---|---|
+| Conv2D | 64 × 64 × 32 |
+| Conv2D | 62 × 62 × 32 |
+| MaxPooling2D | 31 × 31 × 32 |
+| Conv2D | 31 × 31 × 64 |
+| Conv2D | 29 × 29 × 64 |
+| MaxPooling2D | 14 × 14 × 64 |
+| Conv2D | 14 × 14 × 64 |
+| Conv2D | 12 × 12 × 64 |
+| MaxPooling2D | 6 × 6 × 64 |
+| Flatten | 2304 features |
+| Dense | 512 neurons |
+| Output Dense | 50 classes |
+
+### Model Parameters
+
+- Total parameters: 1,345,236
+- Trainable parameters: 1,345,234
+- Model size: 5.13 MB
+
 ## Model Performance
 
 The CNN model achieved the following results:
