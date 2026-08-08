@@ -149,3 +149,17 @@ Research interests:
 - Deep Learning
 - Trustworthy AI
 - Low-resource Language Technology
+
+README
+│
+├── Overview                 
+├── Research Objective      
+├── Methodology             
+├── Dataset Description     
+├── Technologies Used       
+├── Model Architecture      
+├── Research Results        
+├── Project Structure       
+├── Installation & Usage    
+└── Future Improvements     
+
