@@ -105,20 +105,28 @@ The Yoruba Character Recognition system was developed using a Convolutional Neur
 - Trainable parameters: 1,345,234
 - Model size: 5.13 MB
 
-## Model Performance
+## Research Results
 
-The CNN model achieved the following results:
-* Metric | Value 
-* Training Accuracy | 89.17% 
-* Validation Accuracy | 88.08% 
-* Training Loss | 0.3115 
-* Validation Loss | 0.4216
+The CNN model achieved the following results after 50 training epochs:
 
-The results demonstrate that deep learning methods can effectively recognize Yoruba characters and provide a foundation for future language technology research.
+| Metric | Value |
+|---|---:|
+| Training Accuracy | 89.17% |
+| Validation Accuracy | 88.08% |
+| Training Loss | 0.3115 |
+| Validation Loss | 0.4216 |
+| Training Epochs | 50 |
+
+The results demonstrate the effectiveness of the developed CNN approach for Yoruba character classification and provide a foundation for further research into AI technologies for low-resource languages.
+
+### Training Accuracy
+![Training Accuracy](results/training_accuracy.png)
+
+### Training Loss
+![Training Loss](results/training_loss.png)
 
 
 ## Research Relevance
-
 This project aligns with research areas including:
 - Deep Learning
 - Machine Learning
@@ -128,10 +136,60 @@ This project aligns with research areas including:
 
 Future extensions of this work include exploring transformer-based models, Large Language Models (LLMs), and multimodal AI systems for African languages.
 
+## Installation and Usage
 
-## Future Work
+### 1. Clone the Repository to your local computer:
 
-Future improvements include:
+```bash
+git clone https://github.com/001kazeem/yoruba-character-recognition-cnn.git
+cd yoruba-character-recognition-cnn
+```
+
+### 2. Create a Python virtual environment to keep the project's dependencies isolated:
+
+```bash
+python -m venv venv
+```
+
+On Windows, activate the virtual environment using:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+Install the required Python packages using the provided `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+The main dependencies include TensorFlow, OpenCV, NumPy, Pandas, Matplotlib, Scikit-learn, and Jupyter.
+
+### 4. Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Open the relevant notebook from the `notebooks/` directory to explore the data preprocessing, model development, training, and evaluation workflow.
+
+### 5. Dataset
+
+A small sample of the dataset is included in the repository for demonstration purposes.
+The complete dataset of approximately 5,000 labelled Yoruba character images used during the research is not included in the public repository.
+
+### 6. Trained Model
+The trained CNN model is provided in the `models/` directory for further experimentation and evaluation.
+
+### 7. Results
+
+Training results and visualizations are available in the `results/` directory, including:
+- Training accuracy
+- Training loss
+- Training epoch screenshots
+
+
+## Future improvements include:
 - Extending character recognition to Yoruba words and sentences.
 - Applying Natural Language Processing techniques.
 - Exploring transformer-based models and Large Language Models.
