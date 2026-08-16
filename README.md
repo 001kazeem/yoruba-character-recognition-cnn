@@ -188,6 +188,23 @@ Training results and visualizations are available in the `results/` directory, i
 - Training loss
 - Training epoch screenshots
 
+## Project Structure
+
+```text
+yoruba-character-recognition-cnn/
+│
+├── dataset/                # Dataset directory
+├── docs/                   # Project documentation
+├── models/                 # Trained CNN model
+├── notebooks/              # Jupyter notebooks used for development
+├── results/                # Training results and visualizations
+├── src/                    # Source code
+├── .gitignore              # Files excluded from version control
+├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
+├── yoruba_character.csv   # Character dataset labels/data
+└── yoruba_character.xlsx  # Dataset in Excel format
+```
 
 ## Future improvements include:
 - Extending character recognition to Yoruba words and sentences.
@@ -198,26 +215,14 @@ Training results and visualizations are available in the `results/` directory, i
 
 
 ## Author
-Kazeem Umar Faruk
+
+**Kazeem Umar Faruk**  
 Computer Science Graduate | AI Research Enthusiast
 
-Research interests:
+**Research Interests**
 - Natural Language Processing
 - Large Language Models
 - Deep Learning
 - Trustworthy AI
-- Low-resource Language Technology
-
-README
-│
-├── Overview                 
-├── Research Objective      
-├── Methodology             
-├── Dataset Description     
-├── Technologies Used       
-├── Model Architecture      
-├── Research Results        
-├── Project Structure       
-├── Installation & Usage    
-└── Future Improvements     
+- Low-resource Language Technology 
 
