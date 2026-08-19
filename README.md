@@ -1,110 +1,482 @@
-# Yoruba Character Recognition Using Deep Learning
+# \# Yoruba Character Recognition Using Deep Learning
 
-## Overview
+# 
 
-This project presents a Deep Learning-based approach for recognizing Yoruba characters using Convolutional Neural Networks (CNNs).
-The research explores the application of Artificial Intelligence techniques to low-resource language technology by developing a system capable of classifying Yoruba character images accurately.
-Yoruba is one of the widely spoken African languages, yet digital language resources remain limited compared to high-resource languages. This project demonstrates how Machine Learning can contribute to language preservation, accessibility, and intelligent language systems.
+# \## Overview
 
-## Research Objective
+# 
 
-The main objective of this project is to develop an automated system capable of recognizing Yoruba characters from image data using deep learning techniques.
+# This project presents a Deep Learning-based approach for recognizing Yoruba characters using Convolutional Neural Networks (CNNs).
 
-The project aims to:
-- Develop a CNN-based character recognition model.
-- Build a complete machine learning pipeline from data preparation to evaluation.
-- Investigate AI applications for low-resource language technologies.
-- Provide a foundation for future research in NLP and language models.
+# The research explores the application of Artificial Intelligence techniques to low-resource language technology by developing a system capable of classifying Yoruba character images accurately.
 
-## Dataset
+# Yoruba is one of the widely spoken African languages, yet digital language resources remain limited compared to high-resource languages. This project demonstrates how Machine Learning can contribute to language preservation, accessibility, and intelligent language systems.
 
-The dataset used in this research contains approximately 5,000 labelled Yoruba character images.
+# 
 
-Dataset details:
-- Dataset size: 5,000 images
-- Data type: Image-based character samples
-- Task: Multi-class classification
+# \## Research Objective
 
-Preprocessing steps included:
-- Image resizing
-- Pixel normalization
-- Data augmentation
-- Training and validation splitting
+# 
 
-## Methodology
-The project followed a machine learning pipeline consisting of:
+# The main objective of this project is to develop an automated system capable of recognizing Yoruba characters from image data using deep learning techniques.
 
-1. Data collection and annotation
-2. Data preprocessing
-3. CNN model development
-4. Model training
-5. Performance evaluation
+# 
 
-The model was trained using Convolutional Neural Network techniques because CNNs are effective for extracting visual features from image-based data.
+# The project aims to:
 
-## Technologies Used
+# \- Develop a CNN-based character recognition model.
 
-Programming Language:
-- Python
+# \- Build a complete machine learning pipeline from data preparation to evaluation.
 
-Machine Learning Frameworks:
-- TensorFlow
-- Keras
+# \- Investigate AI applications for low-resource language technologies.
 
-Computer Vision:
-- OpenCV
+# \- Provide a foundation for future research in NLP and language models.
 
-Data Processing:
-- NumPy
-- Pandas
+# 
 
-Visualization:
-- Matplotlib
+# \## Dataset
 
-Development Environment:
-- Jupyter Notebook
+# 
 
-## Model Performance
+# The dataset used in this research contains approximately 5,000 labelled Yoruba character images.
 
-The CNN model achieved the following results:
-* Metric | Value 
-* Training Accuracy | 89.17% 
-* Validation Accuracy | 88.08% 
-* Training Loss | 0.3115 
-* Validation Loss | 0.4216
+# 
 
-The results demonstrate that deep learning methods can effectively recognize Yoruba characters and provide a foundation for future language technology research.
+# Dataset details:
+
+# \- Dataset size: 5,000 images
+
+# \- Data type: Image-based character samples
+
+# \- Task: Multi-class classification
+
+# 
+
+# Preprocessing steps included:
+
+# \- Image resizing
+
+# \- Pixel normalization
+
+# \- Data augmentation
+
+# \- Training and validation splitting
+
+# 
+
+# \## Methodology
+
+# The project followed a machine learning pipeline consisting of:
+
+# 
+
+# 1\. Data collection and annotation
+
+# 2\. Data preprocessing
+
+# 3\. CNN model development
+
+# 4\. Model training
+
+# 5\. Performance evaluation
+
+# 
+
+# The model was trained using Convolutional Neural Network techniques because CNNs are effective for extracting visual features from image-based data.
+
+# 
+
+# \## Technologies Used
+
+# 
+
+# Programming Language:
+
+# \- Python
+
+# 
+
+# Machine Learning Frameworks:
+
+# \- TensorFlow
+
+# \- Keras
+
+# 
+
+# Computer Vision:
+
+# \- OpenCV
+
+# 
+
+# Data Processing:
+
+# \- NumPy
+
+# \- Pandas
+
+# 
+
+# Visualization:
+
+# \- Matplotlib
+
+# 
+
+# Development Environment:
+
+# \- Jupyter Notebook
+
+# 
+
+# \## Model Architecture
+
+# 
+
+# The Yoruba Character Recognition system was developed using a Convolutional Neural Network (CNN) implemented with TensorFlow and Keras. The model follows a sequential architecture consisting of feature extraction layers and classification layers.
+
+# 
+
+# \### CNN Architecture Overview
+
+# 
+
+# | Component | Description |
+
+# |---|---|
+
+# | Model Type | Sequential Convolutional Neural Network |
+
+# | Input | Preprocessed Yoruba character images |
+
+# | Convolution Layers | Multiple Conv2D layers with 32 and 64 filters |
+
+# | Activation Function | ReLU |
+
+# | Pooling | MaxPooling2D layers |
+
+# | Regularization | Dropout layers |
+
+# | Flatten Layer | Converts feature maps into vectors |
+
+# | Fully Connected Layer | Dense layer with 512 neurons |
+
+# | Output Layer | Dense layer with 50 neurons for classification |
+
+# 
+
+# \### Detailed Layer Configuration
+
+# 
+
+# | Layer | Output Shape |
+
+# |---|---|
+
+# | Conv2D | 64 × 64 × 32 |
+
+# | Conv2D | 62 × 62 × 32 |
+
+# | MaxPooling2D | 31 × 31 × 32 |
+
+# | Conv2D | 31 × 31 × 64 |
+
+# | Conv2D | 29 × 29 × 64 |
+
+# | MaxPooling2D | 14 × 14 × 64 |
+
+# | Conv2D | 14 × 14 × 64 |
+
+# | Conv2D | 12 × 12 × 64 |
+
+# | MaxPooling2D | 6 × 6 × 64 |
+
+# | Flatten | 2304 features |
+
+# | Dense | 512 neurons |
+
+# | Output Dense | 50 classes |
+
+# 
+
+# \### Model Parameters
+
+# 
+
+# \- Total parameters: 1,345,236
+
+# \- Trainable parameters: 1,345,234
+
+# \- Model size: 5.13 MB
+
+# 
+
+# \## Research Results
+
+# 
+
+# The CNN model achieved the following results after 50 training epochs:
+
+# 
+
+# | Metric | Value |
+
+# |---|---:|
+
+# | Training Accuracy | 89.17% |
+
+# | Validation Accuracy | 88.08% |
+
+# | Training Loss | 0.3115 |
+
+# | Validation Loss | 0.4216 |
+
+# | Training Epochs | 50 |
+
+# 
+
+# The results demonstrate the effectiveness of the developed CNN approach for Yoruba character classification and provide a foundation for further research into AI technologies for low-resource languages.
+
+# 
+
+# \### Training Accuracy
+
+# !\[Training Accuracy](results/training\_accuracy.png)
+
+# 
+
+# \### Training Loss
+
+# !\[Training Loss](results/training\_loss.png)
+
+# 
+
+# \## Model Prediction Example
+
+# 
+
+# The trained CNN model was tested on unseen Yoruba character images.
+
+# The model receives a preprocessed image and predicts one of the 50 Yoruba character classes.
+
+# 
+
+# Example prediction:
+
+# 
+
+# !\[Prediction Example](results/prediction\_example.png)
+
+# 
+
+# The prediction output demonstrates the ability of the developed model to recognize Yoruba characters from image data.
 
 
-## Research Relevance
 
-This project aligns with research areas including:
-- Deep Learning
-- Machine Learning
-- Low-resource Language Technology
-- Natural Language Processing (NLP)
-- Trustworthy Artificial Intelligence
+# \## Research Relevance
 
-Future extensions of this work include exploring transformer-based models, Large Language Models (LLMs), and multimodal AI systems for African languages.
+# This project aligns with research areas including:
+
+# \- Deep Learning
+
+# \- Machine Learning
+
+# \- Low-resource Language Technology
+
+# \- Natural Language Processing (NLP)
+
+# \- Trustworthy Artificial Intelligence
+
+# 
+
+# Future extensions of this work include exploring transformer-based models, Large Language Models (LLMs), and multimodal AI systems for African languages.
+
+# 
+
+# \## Installation and Usage
+
+# 
+
+# \### 1. Clone the Repository to your local computer:
+
+# 
+
+# ```bash
+
+# git clone https://github.com/001kazeem/yoruba-character-recognition-cnn.git
+
+# cd yoruba-character-recognition-cnn
+
+# ```
+
+# 
+
+# \### 2. Create a Python virtual environment to keep the project's dependencies isolated:
+
+# 
+
+# ```bash
+
+# python -m venv venv
+
+# ```
+
+# 
+
+# On Windows, activate the virtual environment using:
+
+# 
+
+# ```bash
+
+# venv\\Scripts\\activate
+
+# ```
+
+# 
+
+# \### 3. Install Dependencies
+
+# Install the required Python packages using the provided `requirements.txt` file:
+
+# 
+
+# ```bash
+
+# pip install -r requirements.txt
+
+# ```
+
+# The main dependencies include TensorFlow, OpenCV, NumPy, Pandas, Matplotlib, Scikit-learn, and Jupyter.
+
+# 
+
+# \### 4. Launch Jupyter Notebook:
+
+# 
+
+# ```bash
+
+# jupyter notebook
+
+# ```
+
+# 
+
+# Open the relevant notebook from the `notebooks/` directory to explore the data preprocessing, model development, training, and evaluation workflow.
+
+# 
+
+# \### 5. Dataset
+
+# 
+
+# A small sample of the dataset is included in the repository for demonstration purposes.
+
+# The complete dataset of approximately 5,000 labelled Yoruba character images used during the research is not included in the public repository.
+
+# 
+
+# \### 6. Trained Model
+
+# The trained CNN model is provided in the `models/` directory for further experimentation and evaluation.
+
+# 
+
+# \### 7. Results
+
+# 
+
+# Training results and visualizations are available in the `results/` directory, including:
+
+# \- Training accuracy
+
+# \- Training loss
+
+# \- Training epoch screenshots
+
+# 
+
+# \## Project Structure
+
+# 
+
+# ```text
+
+# yoruba-character-recognition-cnn/
+
+# │
+
+# ├── dataset/                # Dataset directory
+
+# ├── docs/                   # Project documentation
+
+# ├── models/                 # Trained CNN model
+
+# ├── notebooks/              # Jupyter notebooks used for development
+
+# ├── results/                # Training results and visualizations
+
+# ├── src/                    # Source code
+
+# ├── .gitignore              # Files excluded from version control
+
+# ├── README.md               # Project documentation
+
+# ├── requirements.txt        # Python dependencies
+
+# ├── yoruba\_character.csv   # Character dataset labels/data
+
+# └── yoruba\_character.xlsx  # Dataset in Excel format
+
+# ```
+
+# 
+
+# \## Future improvements include:
+
+# \- Extending character recognition to Yoruba words and sentences.
+
+# \- Applying Natural Language Processing techniques.
+
+# \- Exploring transformer-based models and Large Language Models.
+
+# \- Developing AI solutions for low-resource African languages.
+
+# \- Improving model explainability using Explainable AI methods.
+
+# 
+
+# 
+
+# \## Author
+
+# 
+
+# \*\*Kazeem Umar Faruk\*\*  
+
+# Computer Science Graduate | AI Research Enthusiast
+
+# 
+
+# \*\*Research Interests\*\*
+
+# \- Natural Language Processing
+
+# \- Large Language Models
+
+# \- Deep Learning
+
+# \- Trustworthy AI
+
+# \- Low-resource Language Technology 
 
 
-## Future Work
-
-Future improvements include:
-- Extending character recognition to Yoruba words and sentences.
-- Applying Natural Language Processing techniques.
-- Exploring transformer-based models and Large Language Models.
-- Developing AI solutions for low-resource African languages.
-- Improving model explainability using Explainable AI methods.
 
 
-## Author
-Kazeem Umar Faruk
-Computer Science Graduate | AI Research Enthusiast
 
-Research interests:
-- Natural Language Processing
-- Large Language Models
-- Deep Learning
-- Trustworthy AI
-- Low-resource Language Technology
+# 
+
+
+
